@@ -82,6 +82,8 @@ main {
 }
 
 .card {
+  position: relative;           /* establish containing block for absolute children */
+  overflow: hidden;             /* clip rotated images that bleed out */
   background-color: rgba(67, 45, 236, 0.8);
   color: white;
   padding: 20px;
@@ -104,12 +106,12 @@ main {
 .card-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;      /* text aligns to top */
 }
 
 .card-text {
   flex: 1;
-  padding-right: 20px;
+  padding-right: 110px;         /* make room for the icon so text doesn’t overlap */
 }
 
 .card-text h2 {
@@ -125,14 +127,28 @@ main {
 }
 
 .card-icon {
+  position: absolute;           /* pull icon container out of flow */
+  right: 18px;                  /* distance from right edge inside card */
+  bottom: 10px;                 /* distance from bottom edge inside card */
   flex-shrink: 0;
 }
 
 .card-icon img {
-  width: 80px;
-  height: 80px;
+  width: 124px;
+  height: 124px;
   object-fit: contain;
+  transform-origin: center center;
 }
+
+/* Icon rotations per card */
+.email-icon img { transform: rotate(26.8deg); }
+.bank-icon img { transform: rotate(-15.64deg); }
+.user-icon img { transform: rotate(7.21deg); }
+
+/* Fine tune different icons positioning if needed */
+.email-icon { right: -20px; bottom: -40px; }
+.bank-icon { right: -35px; bottom: -30px; }
+.user-icon { right: -20px; bottom: -50px; }
 
 .home-indicator {
   width: 134px;
