@@ -1,0 +1,18 @@
+.phone-container {
+  background-color: #2c14dd;
+  width: 375px;
+  height: 812px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.skip-btn {
+  background-color: #4c37e2;
+}
+
+.card {
+  background-color: #432dec;
+}
