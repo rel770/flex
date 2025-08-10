@@ -2,6 +2,27 @@ body, .phone-container {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.status-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.signal, .wifi, .battery {
+  font-size: 16px;
+}
+
 .phone-container {
   position: relative;
   background-color: #2c14dd;
