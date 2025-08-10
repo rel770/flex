@@ -96,3 +96,11 @@ main {
   height: 60px;
   object-fit: contain;
 }
+
+.home-indicator {
+  width: 134px;
+  height: 5px;
+  background-color: white;
+  border-radius: 3px;
+  margin: 20px auto 0;
+}
