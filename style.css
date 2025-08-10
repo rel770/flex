@@ -43,18 +43,29 @@ main {
 }
 
 .skip-btn {
-  background-color: #4c37e2;
+  background-color: rgba(76, 55, 226, 0.8);
   position: absolute;
-  top: 20px;
+  top: 50px;
   right: 20px;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 20px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .card {
   background-color: #432dec;
   color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
